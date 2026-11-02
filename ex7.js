@@ -18,9 +18,10 @@ function run() {
   loadOrders((count) => {
     orders = count;
   });
-
+  setTimeout(()=>{
   console.log("User: " + user);
-  console.log("Orders: " + orders);
+  console.log("Orders: " + orders);},80)
+  
 }
 
 if (typeof module !== "undefined") module.exports = { run };

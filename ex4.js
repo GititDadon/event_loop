@@ -4,12 +4,12 @@ function run() {
 
   setTimeout(() => {
     console.log("2");
-    setTimeout(() => console.log("3"), 0);
+    setTimeout(() => console.log("3"), 1000);
   }, 0);
 
-  setTimeout(() => console.log("4"), 0);
+  setTimeout(() => console.log("4"), 2000);
 
-  console.log("5");
+  setTimeout(() => console.log("5"), 3000);
 }
 
 if (typeof module !== "undefined") module.exports = { run };
